@@ -10,7 +10,7 @@ cask_args appdir: "/Applications"
 brew "python3"
 brew "mas"
 
-Applications
+# Applications
 cask "alfred"
 cask "bartender"
 cask "cheatsheet"
