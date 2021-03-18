@@ -26,6 +26,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - iterm2 설치
 
   ```shell
+  brew install cask
   brew cask install iterm2
   ```
 
