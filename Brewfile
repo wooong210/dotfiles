@@ -25,12 +25,14 @@ cask "karabiner-elements"
 cask "keepingyouawake"
 cask "keka"
 cask "macs-fan-control"
+cask "millie"
 cask "mysqlworkbench"
 cask "notion"
 cask "postman"
 cask "pycharm"
 cask "slack"
 cask "steam"
+cask "telegram"
 cask "visual-studio-code"
 cask "zoomus"
 
@@ -52,4 +54,5 @@ mas "Logic Pro", id: 634148309
 mas "Magnet", id:441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Snappy", id: 512617038
 mas "Xcode", id:497799835
