@@ -71,7 +71,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 
 " Color themes
-Plug 'doums/darcula'
+Plug 'chriskempson/base16-vim'
 
 " Lightline settings
 Plug 'itchyny/lightline.vim'
