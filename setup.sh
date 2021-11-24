@@ -35,57 +35,6 @@ else
 fi
 
 
-# Brewfile
-
-
-echo -e "░░ Installing With ${RED}Brewfile${NC}"
-echo -e "░░ ${GREEN}Python3, mas, Programs in Brewfile${NC}"
-echo -n "░░ continue? [y/N] "
-read answer
-if [ "$answer" != "${answer#[Yy]}" ]; then
-    if ! which brew
-    then
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    fi
-
-    read -r -s -p "[sudo] sudo password for $(whoami):" pass
-
-    brew bundle
-
-    sudo xattr -dr com.apple.quarantine /Applications/Alfred\ 4.app
-    sudo xattr -dr com.apple.quarantine /Applications/Bartender\ 3.app
-    sudo xattr -dr com.apple.quarantine /Applications/Cheatsheet.app
-    sudo xattr -dr com.apple.quarantine /Applications/Discord.app
-    sudo xattr -dr com.apple.quarantine /Applications/Flux.app
-    sudo xattr -dr com.apple.quarantine /Applications/Google\ Chrome.app
-    sudo xattr -dr com.apple.quarantine /Applications/IntelliJ\ IDEA.app
-    sudo xattr -dr com.apple.quarantine /Applications/iStat\ Menus.app
-    sudo xattr -dr com.apple.quarantine /Applications/iterm.app
-    sudo xattr -dr com.apple.quarantine /Applications/Karabiner-Elements.app
-    sudo xattr -dr com.apple.quarantine /Applications/KeepingYouAwake.app
-    sudo xattr -dr com.apple.quarantine /Applications/Keka.app
-    sudo xattr -dr com.apple.quarantine /Applications/Macs\ Fan\ Control.app
-    sudo xattr -dr com.apple.quarantine /Applications/MySQLWorkbench.app
-    sudo xattr -dr com.apple.quarantine /Applications/Notion.app
-    sudo xattr -dr com.apple.quarantine /Applications/Postman.app
-    sudo xattr -dr com.apple.quarantine /Applications/PyCharm.app
-    sudo xattr -dr com.apple.quarantine /Applications/Slack.app
-    sudo xattr -dr com.apple.quarantine /Applications/Steam.app
-    sudo xattr -dr com.apple.quarantine /Applications/Visual\ Studio\ Code.app
-
-    sudo xattr -dr com.apple.quarantine /Applications/KakaoTalk.app
-    sudo xattr -dr com.apple.quarantine /Applications/Magnet.app
-    sudo xattr -dr com.apple.quarantine /Applications/Xcode.app
-    sudo xattr -dr com.apple.quarantine /Applications/Hancom\ Office\ HWP\ 2014\ VP\ Viewer.app
-    sudo xattr -dr com.apple.quarantine /Applications/Keynote.app
-    sudo xattr -dr com.apple.quarantine /Applications/Pages.app
-    sudo xattr -dr com.apple.quarantine /Applications/Numbers.app
-
-    aws configure
-fi
-
-
-
 # oh my zsh
 echo -e "░░ Installing ${RED}Zsh Configuration${NC}"
 echo -e "░░ ${GREEN}ohmyzsh, powerlevel10k, zsh-syntax-highlighting, zsh-autosuggestions${NC}"
@@ -143,17 +92,57 @@ if [ "$answer" != "${answer#[Yy]}" ]; then
     $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh
 fi
 
-# nodejs
-if command -v node &>/dev/null; then
-    echo -e "░░ Setting up ${RED}node.js${NC}"
-    echo -e "░░ ${GREEN}yarn, diff-so-fancy${NC}"
-    echo -n "░░ continue? [y/N] "
-    read answer
-    if [ "$answer" != "${answer#[Yy]}" ]; then
-        npm -g install yarn
-        yarn global add diff-so-fancy
+# Brewfile
+echo -e "░░ Installing With ${RED}Brewfile${NC}"
+echo -e "░░ ${GREEN}Programs in Brewfile${NC}"
+echo -n "░░ continue? [y/N] "
+read answer
+if [ "$answer" != "${answer#[Yy]}" ]; then
+    if ! which brew
+    then
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
+
+    read -r -s -p "[sudo] sudo password for $(whoami):" pass
+
+    brew bundle
+
+    sudo xattr -dr com.apple.quarantine /Applications/Alfred\ 4.app
+    sudo xattr -dr com.apple.quarantine /Applications/AppCleaner.app
+    sudo xattr -dr com.apple.quarantine /Applications/Bartender\ 4.app
+    sudo xattr -dr com.apple.quarantine /Applications/Cheatsheet.app
+    sudo xattr -dr com.apple.quarantine /Applications/Discord.app
+    sudo xattr -dr com.apple.quarantine /Applications/Flux.app
+    sudo xattr -dr com.apple.quarantine /Applications/Google\ Chrome.app
+    sudo xattr -dr com.apple.quarantine /Applications/IntelliJ\ IDEA.app
+    sudo xattr -dr com.apple.quarantine /Applications/iStat\ Menus.app
+    sudo xattr -dr com.apple.quarantine /Applications/iterm.app
+    sudo xattr -dr com.apple.quarantine /Applications/Karabiner-Elements.app
+    sudo xattr -dr com.apple.quarantine /Applications/KeepingYouAwake.app
+    sudo xattr -dr com.apple.quarantine /Applications/Keka.app
+    sudo xattr -dr com.apple.quarantine /Applications/Macs\ Fan\ Control.app
+    sudo xattr -dr com.apple.quarantine /Applications/MySQLWorkbench.app
+    sudo xattr -dr com.apple.quarantine /Applications/Notion.app
+    sudo xattr -dr com.apple.quarantine /Applications/Postman.app
+    sudo xattr -dr com.apple.quarantine /Applications/PyCharm.app
+    sudo xattr -dr com.apple.quarantine /Applications/Slack.app
+    sudo xattr -dr com.apple.quarantine /Applications/Steam.app
+    sudo xattr -dr com.apple.quarantine /Applications/Visual\ Studio\ Code.app
+
+    sudo xattr -dr com.apple.quarantine /Applications/Developer.app
+    sudo xattr -dr com.apple.quarantine /Applications/Final\ Cut\ Pro.app
+    sudo xattr -dr com.apple.quarantine /Applications/Hancom\ Office\ HWP\ 2014\ VP\ Viewer.app
+    sudo xattr -dr com.apple.quarantine /Applications/KakaoTalk.app
+    sudo xattr -dr com.apple.quarantine /Applications/Keynote.app
+    sudo xattr -dr com.apple.quarantine /Applications/Logic\ Pro.app
+    sudo xattr -dr com.apple.quarantine /Applications/Magnet.app
+    sudo xattr -dr com.apple.quarantine /Applications/Numbers.app
+    sudo xattr -dr com.apple.quarantine /Applications/Pages.app
+    sudo xattr -dr com.apple.quarantine /Applications/Xcode.app
+
+    aws configure
 fi
+
 
 echo -e "SCRIPT FINISHED\n\n"
 
