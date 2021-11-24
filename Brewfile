@@ -36,7 +36,7 @@ cask "steam"
 cask "telegram"
 cask "visual-studio-code"
 cask "webstorm"
-cask "zoomus"
+cask "zoom"
 
 # fonts
 cask 'font-d2coding'
