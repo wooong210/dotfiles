@@ -12,6 +12,7 @@ cask_args appdir: "~/Applications", require_sha: true
 brew "mas"
 
 # Applications
+cask "1password"
 cask "alfred"
 cask "appcleaner"
 cask "bartender"
@@ -34,6 +35,7 @@ cask "slack"
 cask "steam"
 cask "telegram"
 cask "visual-studio-code"
+cask "webstorm"
 cask "zoomus"
 
 # fonts
