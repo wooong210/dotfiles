@@ -34,7 +34,7 @@ cask "slack"
 cask "steam"
 cask "telegram"
 cask "visual-studio-code"
-cask "zoomus"
+cask "zoom"
 
 # fonts
 cask 'font-d2coding'
