@@ -123,7 +123,7 @@ read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -v "$SETTINGDIR/.vimrc" "$HOME/.vimrc"
     if [! -f ~/.vim/colors/base16-classic-dark.vim]; then
-        git clone git://github.com/chriskempson/base16-vim.git base16
+        git clone --depth=1 git://github.com/chriskempson/base16-vim.git base16
         cp base16/colors/*.vim ~/.vim/colors/
         rm -rf base16
     fi
@@ -139,7 +139,7 @@ echo -n "░░ continue? [y/N] "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -v "$SETTINGDIR/.tmux.conf" "$HOME/.tmux.conf"
-    git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+    git clone --depth=1 https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
     $HOME/.tmux/plugins/tpm/scripts/install_plugins.sh
 fi
 
