@@ -26,8 +26,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - iterm2 설치
 
   ```shell
-  brew install cask
-  brew cask install iterm2
+  brew install iterm2
   ```
 
   - Preferences > Appearance > Windows > Hide scrollbars : Enable
@@ -58,15 +57,13 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 
   - System Preference > Dock > Show recent applications in Dock : Disable
   - System Preference > Mission Control > Automatically rearrange Spaces based on most recent use : Disable
-  - System Preference > Security & Privacy > Show a message when the screen is locked : Enable & Set Lock Message
   - System Preference > Bluetooth > Show Bluetooth in menu bar : Enable
   - System Preference > Sound > Show volume in menu bar : Enable
   - Finder > Preferences > Show these items on the desktop > Hard disks : Enable
   - Finder > Preferences > New Finder windows show : Home Folder
-  - Finder > Preferences > Sidebar : Enable User Home (Disable Recents / Enable Pictures
+  - Finder > Preferences > Sidebar : Enable User Home / Disable Recents
   - Finder > Preferences > Advanced > Show all filename extensions : Enable
   - Finder > Preferences > Advanced > When performing a search : Search the Current Folder
-  - Notes > Edit > Spelling and Grammar > Correct Spelling Automatically : Disable
 
 - 키 누르고 있을 때 연속 입력
 

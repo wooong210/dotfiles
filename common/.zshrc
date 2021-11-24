@@ -48,6 +48,15 @@ alias 'lal=ls -alF'
 alias ta='tmux attach -t '
 alias mux='tmuxinator'
 
+# git
+alias 'gs=git status'
+alias 'gcm=git commit -m'
+alias 'gd=git diff'
+alias 'gp=git push'
+alias 'gadda=git add *'
+alias 'gpull=git pull'
+alias 'ga=git add'
+
 # Docker-compose
 alias 'dc=docker-compose'
 alias 'dcrs=docker-compose down && docker-compose build && docker-compose up'
