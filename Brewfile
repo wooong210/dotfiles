@@ -6,7 +6,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
 # Application Path 
-cask_args appdir: "~/Applications", require_sha: true
+cask_args appdir: "/Applications"
 
 # Binaries/Libraries
 brew "mas"
